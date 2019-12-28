@@ -12,5 +12,5 @@ public class Constants {
     public static final String MOD_NAME = "MiscMods";
     public static final String MOD_ID = "miscmods";
 
-    public static final String VERSION = "1.14.4-0.0.0.0";
+    public static final String VERSION = "1.15.1-0.0.0.0";
 } //class Constants
