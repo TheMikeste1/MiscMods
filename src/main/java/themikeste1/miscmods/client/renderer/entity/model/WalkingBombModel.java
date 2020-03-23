@@ -43,48 +43,47 @@ public class WalkingBombModel<T extends WalkingBombEntity> extends SegmentedMode
         //Top Crown
         outerTopCrown = new ModelRenderer(this, 0, 9);
         outerTopCrown.setRotationPoint(0, 16, 0);
-        outerTopCrown.addBox(-4f, -7f, -4f, 8.0F, 1.0F, 8.0F, scale);
+        outerTopCrown.addBox(-3f, -8f, -3f, 6.0F, 1.0F, 6.0F, scale);
 
         innerTopCrown = new ModelRenderer(this, 0, 9);
         innerTopCrown.setRotationPoint(0, 16, 0);
-        innerTopCrown.addBox(-3f, -8f, -3f, 6.0F, 1.0F, 6.0F, scale);
+        innerTopCrown.addBox(-4f, -7f, -4f, 8.0F, 1.0F, 8.0F, scale);
 
         //Bottom Crown
         outerBottomCrown = new ModelRenderer(this, 0, 9);
         outerBottomCrown.setRotationPoint(0, 16, 0);
-        outerBottomCrown.addBox(-4f, 2f, -4f, 8.0F, 1.0F, 8.0F, scale);
+        outerBottomCrown.addBox(-3f, 3f, -3f, 6.0F, 1.0F, 6.0F, scale);
 
         innerBottomCrown = new ModelRenderer(this, 0, 9);
         innerBottomCrown.setRotationPoint(0, 16, 0);
-        innerBottomCrown.addBox(-3f, 3f, -3f, 6.0F, 1.0F, 6.0F, scale);
+        innerBottomCrown.addBox(-4f, 2f, -4f, 8.0F, 1.0F, 8.0F, scale);
 
         //Left Crown
         outerLeftCrown = new ModelRenderer(this, 0, 9);
         outerLeftCrown.setRotationPoint(0, 16, 0);
-        outerLeftCrown.addBox(-5f, -6f, -4f, 1.0F, 8.0F, 8.0F, scale);
+        outerLeftCrown.addBox(6f, -5f, -3f, -1.0F, 6.0F, 6.0F, scale);
 
-        innerLeftCrown = new ModelRenderer(this, 0, 9);
+        innerLeftCrown = new ModelRenderer(this, 90, 16);
         innerLeftCrown.setRotationPoint(0, 16, 0);
-        innerLeftCrown.addBox(-6f, -5f, -3f, 1.0F, 6.0F, 6.0F, scale);
+        innerLeftCrown.addBox(5f, -6f, -4f, -1.0F, 8.0F, 8.0F, scale);
 
         //Right Crown
         outerRightCrown = new ModelRenderer(this, 0, 9);
         outerRightCrown.setRotationPoint(0, 16, 0);
-        outerRightCrown.addBox(5f, -6f, -4f, -1.0F, 8.0F, 8.0F, scale);
+        outerRightCrown.addBox(-6f, -5f, -3f, 1.0F, 6.0F, 6.0F, scale);
 
-        innerRightCrown = new ModelRenderer(this, 0, 9);
+        innerRightCrown = new ModelRenderer(this, 18, 32);
         innerRightCrown.setRotationPoint(0, 16, 0);
-        innerRightCrown.addBox(6f, -5f, -3f, -1.0F, 6.0F, 6.0F, scale);
-
+        innerRightCrown.addBox(-5f, -6f, -4f, 1.0F, 8.0F, 8.0F, scale);
+        
         //Back Crown
         outerBackCrown = new ModelRenderer(this, 0, 9);
         outerBackCrown.setRotationPoint(0, 16, 0);
-        outerBackCrown.addBox(-4f, -6f, 4f, 8.0F, 8.0F, 1.0F, scale);
+        outerBackCrown.addBox(-3f, -5f, 5f, 6.0F, 6.0F, 1.0F, scale);
 
         innerBackCrown = new ModelRenderer(this, 0, 9);
         innerBackCrown.setRotationPoint(0, 16, 0);
-        innerBackCrown.addBox(-3f, -5f, 5f, 6.0F, 6.0F, 1.0F, scale);
-
+        innerBackCrown.addBox(-4f, -6f, 4f, 8.0F, 8.0F, 1.0F, scale);
     }
 
 
@@ -101,6 +100,7 @@ public class WalkingBombModel<T extends WalkingBombEntity> extends SegmentedMode
 
     @Override
     public Iterable<ModelRenderer> getParts() {
-        return ImmutableList.of(face, innerTopCrown/*, outerBottomCrown, outerLeftCrown, outerRightCrown, outerBackCrown*/);
+        return ImmutableList.of(face, /*innerTopCrown, innerBottomCrown,*/ innerLeftCrown, innerRightCrown, innerBackCrown
+                /*, outerTopCrown, outerBottomCrown, outerLeftCrown, outerRightCrown, outerBackCrown*/);
     }
 }
