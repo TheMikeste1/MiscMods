@@ -22,7 +22,7 @@ modId="miscmods" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 version="${file.jarVersion}" #mandatory
 
-mcversion="1.15.1"
+mcversion="1.15.2"
 
  # A display name for the mod
 displayName="MiscMods" #mandatory
@@ -64,6 +64,6 @@ You can write whatever you want here
 [[dependencies.miscmods]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.1]"
+    versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"

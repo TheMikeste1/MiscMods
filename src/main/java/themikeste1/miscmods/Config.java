@@ -62,7 +62,7 @@ public class Config {
      * variables. This is used when a config file is reloaded.
      ************************************************************************/
     @SubscribeEvent
-    public static void configFileReload(final ModConfig.ConfigReloading event) {
+    public static void configFileReload(final ModConfig.Reloading event) {
 
     }
 }
